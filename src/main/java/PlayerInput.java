@@ -10,15 +10,15 @@ public class PlayerInput {
 
     public int horizontal() {
         int direction = 0;
-        if (game.keyDown(Key.LEFT)) direction--;
-        if (game.keyDown(Key.RIGHT)) direction++;
+        if (game.keyDown(Key.LEFT) || game.keyDown(Key.A)) direction--;
+        if (game.keyDown(Key.RIGHT) || game.keyDown(Key.D)) direction++;
         return direction;
     }
 
     public int vertical() {
         int direction = 0;
-        if (game.keyDown(Key.UP)) direction--;
-        if (game.keyDown(Key.DOWN)) direction++;
+        if (game.keyDown(Key.UP) || game.keyDown(Key.W)) direction--;
+        if (game.keyDown(Key.DOWN) || game.keyDown(Key.S)) direction++;
         return direction;
     }
 }

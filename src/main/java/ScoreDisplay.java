@@ -4,7 +4,7 @@ import zero.ui.Label;
 public class ScoreDisplay {
     private final Label label = new Label("Score: 0");
     private String caption = "Score";
-    private int points
+    private int points;
 
     public void setScore(int points) {
         this.points = points;
